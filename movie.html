@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      label {
+        float: left;
+        width: 20%;
+      }
+      input {
+        display: block;
+        width: 60%;
+      }
+      #gobutton {
+        float: right;
+        width: 150px;
+      }
+      #buttondiv {
+        margin-top: 30px;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- form:post>(label+input:text+br)*5+input:submit -->
+    <form action="#" method="post">
+      <label for="name"
+        ><span style="text-decoration: underline">N</span>ame</label
+      >
+      <input type="text" name="name" id="name" accesskey="n" />
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="5" accesskey="a" />
+
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" />
+
+      <label for="color">Background Color</label>
+      <input type="color" name="color" id="color" />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" />
+      <div id="buttondiv">
+        <input type="submit" value="Go" id="gobutton" />
+      </div>
+    </form>
+  </body>
+</html>
