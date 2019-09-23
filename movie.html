@@ -35,17 +35,19 @@
   <body>
     <!-- form:post>(label+input:text+br)*5+input:submit -->
     <form action="#" method="post">
-      <label for="name"
-        ><span style="text-decoration: underline">N</span>ame</label
-      >
-      <input type="text" name="name" id="name" accesskey="n" />
+      <fieldset>
+        <legend>Person Info</legend>
+        <label for="name"
+          ><span style="text-decoration: underline">N</span>ame</label
+        >
+        <input type="text" name="name" id="name" accesskey="n" />
 
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="5" accesskey="a" />
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="5" accesskey="a" />
 
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" />
-
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" />
+      </fieldset>
       <label for="color">Background Color</label>
       <input type="color" name="color" id="color" />
 
