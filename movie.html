@@ -23,6 +23,14 @@
         width: 80%;
       }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("color").addEventListener("change", function() {
+          console.log(this.value);
+          document.body.style.backgroundColor = this.value;
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- form:post>(label+input:text+br)*5+input:submit -->
